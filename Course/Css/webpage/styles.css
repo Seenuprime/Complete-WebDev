@@ -1,0 +1,42 @@
+.carousel-item img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.card-section {
+  margin: 20px;
+}
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.card-container button {
+  border-radius: 10px;
+  padding: 3px 0px;
+  margin-top: 20px;
+}
+.card {
+  width: 300px;
+  padding: 20px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+.card h2 {
+  color: #ff9e1f;
+  padding: 50px 20px;
+  border: 2px solid #ff9e1f;
+}
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f1f1f1;
+}
+.footer p {
+  color: #555;
+  font-size: 14px;
+  margin: 0;
+}

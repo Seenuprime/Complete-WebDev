@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #383333;
+}
+
+.container {
+  padding: 20px;
+  background-color: #261e34;
+  color: white;
+}
+
+.container input {
+  box-sizing: border-box;
+  text-align: end;
+  width: 100%;
+  margin: 15px 0px;
+  font-weight: bolder;
+  font-size: clamp(1rem, 4vw, 2.5rem);
+}
+
+.cal_container {
+  width: 300px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 15px;
+}
+
+.cal_container button {
+  text-align: center;
+  align-content: center;
+  border: 1px solid #8b7ea070;
+  border-radius: 8px;
+  color: rgb(187, 177, 241);
+  background-color: #675d781a;
+  box-shadow: 5px 5px 10px #968ea31a;
+}
+
+.cal_container button:hover {
+  background-color: rgb(69, 56, 84);
+  cursor: pointer;
+}
+
+.cal_container #zero {
+  grid-column: span 2;
+  padding-right: 50%;
+}

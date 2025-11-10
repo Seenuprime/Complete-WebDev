@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="container">
+        <h1>Calculator</h1>
+        <input type="text" id="input" placeholder="0" />
+        <div class="cal_container">
+          <button id="ac" onclick="clicked('ac')">AC</button>
+          <button id="pom" onclick="clicked('pom')">+/-</button>
+          <button id="percentage" onclick="clicked('%')">%</button>
+          <button id="buttonide" onclick="clicked('/')">/</button>
+          <button id="seven" onclick="clicked('7')">7</button>
+          <button id="eight" onclick="clicked('8')">8</button>
+          <button id="nine" onclick="clicked('9')">9</button>
+          <button id="multiply" onclick="clicked('*')">x</button>
+          <button id="four" onclick="clicked(4)">4</button>
+          <button id="five" onclick="clicked(5)">5</button>
+          <button id="six" onclick="clicked(6)">6</button>
+          <button id="minus" onclick="clicked('-')">-</button>
+          <button id="one" onclick="clicked('1')">1</button>
+          <button id="two" onclick="clicked('2')">2</button>
+          <button id="three" onclick="clicked('3')">3</button>
+          <button id="plus" onclick="clicked('+')">+</button>
+          <button id="zero" onclick="clicked('0')">0</button>
+          <button id="." onclick="clicked('.')">.</button>
+          <button id="=" onclick="clicked('=')">=</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

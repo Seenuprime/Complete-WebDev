@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.favicon.cc/logo3d/920434.png"
+    />
+    <title>Js Advance</title>
+  </head>
+  <body>
+    <h2>This is the example for the Java scripts advance</h2>
+    <form action="" onsubmit="return false">
+      <button onclick="menubar()">Click here</button>
+    </form>
+    <div class="sidebar">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <style>
+      h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .sidebar {
+        display: none;
+        background-color: black;
+        height: 200px;
+        width: 150px;
+        color: white;
+        position: fixed;
+      }
+    </style>
+
+    <script>
+      //   function greet() {
+      //     window.alert("The Button Clicked!");
+      //     document.querySelector(".sidebar").style.display = "block";
+      //   }
+
+      function menubar() {
+        const menu = document.querySelector(".sidebar");
+        const computedStyle = window.getComputedStyle(menu);
+        if (computedStyle.display === "none") {
+          menu.style.display = "block";
+        } else {
+          menu.style.display = "none";
+        }
+      }
+
+      // No need for this event listener since we're using the button's onclick
+      // If you want to keep it, the correct way would be:
+      // document.querySelector(".sidebar").addEventListener("click", menubar);
+    </script>
+  </body>
+</html>

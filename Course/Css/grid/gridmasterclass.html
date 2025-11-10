@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Master</title>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          "bar main main main"
+          "footer footer footer footer";
+        gap: 10px;
+        height: 100vh;
+      }
+      .item1 {
+        grid-area: header;
+        background-color: lightcoral;
+        text-align: center;
+        padding: 20px;
+      }
+      .item2 {
+        grid-area: bar;
+        background-color: lightblue;
+        text-align: center;
+        padding: 20px;
+      }
+      .item3 {
+        grid-area: main;
+        background-color: lightgreen;
+        text-align: center;
+        padding: 20px;
+      }
+      .item4 {
+        grid-area: footer;
+        background-color: lightgoldenrodyellow;
+        text-align: center;
+        padding: 20px;
+      }
+      .items {
+        align-content: center;
+        font-size: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="items item1">Header</div>
+      <div class="items item2">Bar</div>
+      <div class="items item3">Main</div>
+      <div class="items item4">Footer</div>
+    </div>
+    </body>
+</html>

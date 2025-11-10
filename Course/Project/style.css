@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Special+Gothic:wght@400..700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #090a13;
+  color: rgb(255, 255, 255);
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "nav"
+    "hero"
+    "footer";
+  gap: 10px;
+  min-height: 100vh;
+}
+
+.navbar {
+  grid-area: nav;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}
+.navbar .logo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+
+.navbar .navcontainer ul {
+  display: flex;
+  list-style: none;
+}
+
+.navcontainer ul li {
+  margin-left: 50px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: large;
+}
+
+.navcontainer ul li a {
+  text-decoration: none;
+}
+
+.navcontainer .contact {
+  padding-left: 30px;
+}
+
+.hero {
+  grid-area: hero;
+  display: grid; /* make hero a grid for its children */
+  grid-template-columns: 1fr 1fr; /* content | photo */
+  gap: 20px;
+  align-items: center;
+  padding: 24px;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero .herocontent {
+  /* visible border (example) */
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 1rem;
+  border-radius: 6px;
+  font-size: large;
+}
+.namecard {
+  margin: 40px;
+}
+.herocontent .name {
+  margin-top: 10px;
+  color: #6a3fd6;
+}
+
+.herocontent p {
+  margin: 20px 0px;
+}
+
+.hero button {
+  background-color: #6a3fd6;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-size: large;
+}
+
+.hero .photo {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero .photo img {
+  border-radius: 120px 100px;
+}
+
+.footer {
+  grid-area: footer;
+}

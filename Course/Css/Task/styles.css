@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fffff8;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px #575959;
+  display: inline-block;
+  text-align: center;
+  padding: 20px 5px;
+  margin-left: 20px;
+  background-color: black;
+  color: rgb(205, 199, 199);
+  transition: transform 0.6s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-container {
+  display: flex;
+  padding: 20px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card img {
+  width: 85%;
+  height: 150px;
+  filter: blur(0.7px);
+  position: relative;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 0 0 10px 10px #757575;
+  transition: transform 0.3s;
+}
+
+.card img:hover {
+  filter: none;
+  cursor: pointer;
+  position: relative;
+  top: -5px;
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  font-size: 26px;
+  font-weight: 800;
+  margin: 20px 0;
+  color: #fcf3f3;
+}
+.card p {
+  margin: 40px 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #d4d0d0;
+}

@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #171027;
+  color: rgb(210, 207, 253);
+  font-family: "Open Sans", sans-serif;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  padding: 30px;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.input-layout {
+  margin-top: 18px;
+}
+.input-layout input {
+  padding: 10px 25px;
+}
+.input-layout input:focus {
+  outline: none;
+}
+.input-layout button {
+  padding: 12px 8px;
+  margin-left: 10px;
+  background-color: #662cec;
+  color: white;
+  border: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+li {
+  margin-top: 20px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+li span {
+  background-color: #662cec;
+  width: 100%;
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+li button {
+  padding: 5px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
