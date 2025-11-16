@@ -60,3 +60,26 @@ div .cart {
   min-height: 50px;
   margin-bottom: 10px;
 }
+
+.Citems {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px;
+  margin: 4px 20px;
+  background-color: #514e54;
+  border-radius: 5px;
+}
+
+.Citems button {
+  padding: 5px 8px;
+  border: none;
+  border-radius: 5px;
+  background-color: #7e2626;
+  color: white;
+  cursor: pointer;
+}
+
+.Citems button:hover {
+  box-shadow: 4px 0px 6px 2px rgb(160, 92, 92);
+}

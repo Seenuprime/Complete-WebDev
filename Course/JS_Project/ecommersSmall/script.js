@@ -25,6 +25,26 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  cartitems.addEventListener("click", (event) => {
+    if (event.target.nodeName !== "BUTTON") return;
+
+    const parent_div = event.target.parentElement;
+    const delete_item = parent_div.querySelector("p").textContent;
+    parent_div.remove();
+
+    total_cost -= Number(delete_item.split(".")[1]);
+
+    checkout.querySelector(".total")?.remove();
+    if (total_cost > 0) {
+      checkout.insertAdjacentHTML(
+        "afterbegin",
+        `<p class="total">Total: ₹${total_cost}</p>`
+      );
+    } else {
+      checkoutBtn.style.display = "none";
+    }
+  });
+
   checkoutBtn.addEventListener("click", () => {
     alert(`Your total bill is ₹${total_cost}`);
     total_cost = 0;
@@ -35,8 +55,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function updateCartItems(item) {
     cartitems.innerHTML += `
-    <p>${item}</p>
-    ----------------------------------------
+    <div class='Citems'>
+    <p>${item}</p> 
+    <button>Delete</button>
+    </div>
     `;
   }
 });
