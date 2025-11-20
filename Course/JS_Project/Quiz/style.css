@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+  display: block;
+  justify-content: center;
+  width: 300px;
+  align-items: center;
+  border: 2px solid rgb(255, 111, 0);
+  padding: 30px 50px;
+  border-radius: 8px;
+}
+.start {
+  text-align: center;
+}
+.start button {
+  padding: 5px 15px;
+  background-color: rgb(255, 111, 0);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  color: white;
+  transition: ease-in-out;
+}
+.start button:hover {
+  background-color: rgba(255, 111, 0, 0.877);
+  color: rgb(18, 18, 171);
+  transform: scale(1.05);
+}
+.option {
+  padding: 12px;
+  margin: 8px 0;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+
+.option:hover {
+  background: #ddd;
+}
+
+.option.selected {
+  background: #007bff;
+  color: white;
+  font-weight: bold;
+}
+.question {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.next button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(124, 53, 124);
+  color: white;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
